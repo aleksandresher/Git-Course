@@ -1,11 +1,10 @@
-import Image from "next/image";
+import StartBtn from "./components/StartBtn";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <h1>Halloo</h1>
-        <p>this is not paragraph</p>
+        <StartBtn />
       </div>
     </main>
   );
