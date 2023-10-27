@@ -8,7 +8,7 @@ function StartBtn() {
   return (
     <div className="p-5 bg-background">
       <Button
-        className="text-black-600 bg-green-500 hover:bg-green-600"
+        className="text-black-600 bg-[#3bb273] hover:bg-[#3bb273]"
         onClick={() => dispatch(openCardModal())}
       >
         Start
