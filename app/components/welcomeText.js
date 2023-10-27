@@ -17,7 +17,7 @@ function WelcomeText() {
             1000,
             "Ready to begin your linguistic journey?",
             1000,
-            "Click 'Start' to embark on your adventure!",
+            "Select Language and Click 'Start' to embark on your adventure!",
             1000,
             () => {
               setTextIsVisible(false);
