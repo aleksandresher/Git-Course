@@ -25,6 +25,7 @@ const cardSlice = createSlice({
     cardList: cardTestData,
     cardIsOpen: false,
     cardStartIndex: 0,
+    language: "english",
   },
   reducers: {
     openCardModal: (state) => {
@@ -36,9 +37,12 @@ const cardSlice = createSlice({
     decreaseIndex: (state) => {
       state.cardStartIndex -= 1;
     },
+    changeLanguage: (state, action) => {
+      state.language = action.payload;
+    },
   },
 });
 
-export const { openCardModal, increaseIndex, decreaseIndex } =
+export const { openCardModal, increaseIndex, decreaseIndex, changeLanguage } =
   cardSlice.actions;
 export default cardSlice.reducer;
