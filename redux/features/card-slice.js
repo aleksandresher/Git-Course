@@ -14,6 +14,14 @@ const cardTestData = [
     deWord: "Gut",
   },
   {
+    enWord: "Wine",
+    deWord: "Wein",
+  },
+  {
+    enWord: "Please",
+    deWord: "Bitte",
+  },
+  {
     enWord: "Thank you",
     deWord: "Danke",
   },
