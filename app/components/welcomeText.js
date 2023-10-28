@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 function WelcomeText() {
   const [textIsVisible, setTextIsVisible] = useState(true);
+
   if (!textIsVisible) {
     return null;
   } else {
@@ -26,7 +27,7 @@ function WelcomeText() {
           wrapper="span"
           deletionSpeed={80}
           speed={60}
-          style={{ fontSize: "2em", display: "inline-block" }}
+          style={{ fontSize: "2em" }}
           repeat="no"
         />
       </div>
