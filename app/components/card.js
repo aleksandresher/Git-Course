@@ -6,6 +6,7 @@ function Card() {
   const startIndex = useSelector((state) => state.card.cardStartIndex);
   const currentLanguage = useSelector((state) => state.card.language);
   const currentWord = cardWords[startIndex];
+  console.log("change for");
 
   if (!cardModal) {
     return null;
