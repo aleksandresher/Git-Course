@@ -6,14 +6,12 @@ import { useDispatch } from "react-redux";
 function StartBtn() {
   const dispatch = useDispatch();
   return (
-    <div className="p-5 bg-background">
-      <Button
-        className="text-black-600 bg-[#3bb273] hover:bg-[#3bb273]"
-        onClick={() => dispatch(openCardModal())}
-      >
-        Start
-      </Button>
-    </div>
+    <Button
+      className="text-black-600 bg-[#3bb273] hover:bg-[#3bb273]"
+      onClick={() => dispatch(openCardModal())}
+    >
+      Start
+    </Button>
   );
 }
 export default StartBtn;
