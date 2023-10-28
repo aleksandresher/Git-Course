@@ -10,7 +10,7 @@ import AddWords from "./components/addWords";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[#edede9]">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex flex-col">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex flex-col gap-5">
         <div className="h-[30px]">
           <WelcomeText />
         </div>
@@ -21,7 +21,7 @@ export default function Home() {
           <AddWords />
         </div>
         <Card />
-        <div className="flex items-center gap-2 mt-8">
+        <div className="flex items-center gap-2 mt-5">
           <PreviousBtn />
           <NextBtn />
         </div>
