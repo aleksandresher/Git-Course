@@ -5,6 +5,7 @@ import NextBtn from "./components/nextBtn";
 import PreviousBtn from "./components/previousBtn";
 import WelcomeText from "./components/welcomeText";
 import { LanguageCombo } from "./components/languageSelect";
+import AddWords from "./components/addWords";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <div className="flex justify-center items-center">
           <LanguageCombo />
           <StartBtn />
+          <AddWords />
         </div>
         <Card />
         <div className="flex items-center gap-2 mt-8">
