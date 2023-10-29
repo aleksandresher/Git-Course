@@ -15,7 +15,7 @@ function SignUp() {
         <label htmlFor="email">Email</label>
         <input
           className="p-1 rounded-sm"
-          {...register("email", { required: "email is required" })}
+          {...register("email", { required: "Email is required" })}
         />
         {errors?.email?.message ? (
           <p className="text-red-600">{errors.email.message}</p>
@@ -28,7 +28,10 @@ function SignUp() {
         <input
           type="password"
           className="p-1 rounded-sm"
-          {...register("password", { required: "email is required" })}
+          {...register("password", {
+            required: "Password is required",
+            minLength: 8,
+          })}
         />
         {errors?.password?.message ? (
           <p className="text-red-600">{errors.password.message}</p>
@@ -41,7 +44,7 @@ function SignUp() {
         <input
           type="password"
           className="p-1 rounded-sm"
-          {...register("password", { required: "email is required" })}
+          {...register("password", { required: "Password is required" })}
         />
         {errors?.password?.message ? (
           <p className="text-red-600">{errors.password.message}</p>
@@ -49,7 +52,9 @@ function SignUp() {
           ""
         )}
       </div>
-      <Button className="mt-3 w-full">Create Account</Button>
+      <Button className="mt-3 w-full" type="submit">
+        Create Account
+      </Button>
     </form>
   );
 }
