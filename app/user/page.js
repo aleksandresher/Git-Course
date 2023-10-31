@@ -1,7 +1,9 @@
+"use client";
 import ProgressBar from "../components/personal/progress";
 import CardTypeSelect from "../components/personal/cardTypeSelect";
 import { Button } from "@/components/ui/button";
 import CheckTag from "../components/personal/checkTag";
+import { LanguageCombo } from "../components/languageSelect";
 function PersonalPage() {
   return (
     <div className="h-screen w-full  bg-[#f0f0ed]">
@@ -12,9 +14,12 @@ function PersonalPage() {
         <Button>Log out</Button>
       </div>
       <div className="flex flex-col items-center">
-        <div className="flex items-center gap-4 w-[600px]">
+        <div className="flex  gap-4 w-[600px] ">
           <CardTypeSelect />
-          <CheckTag />
+          <div className="h-[400px] flex flex-col justify-between pt-[90px]">
+            <LanguageCombo />
+            <CheckTag />
+          </div>
         </div>
       </div>
     </div>

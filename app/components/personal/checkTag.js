@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 function CheckTag() {
   return (
     <div className="flex flex-col w-[200px] gap-2">
+      <label className="text-red-900">Label Cards</label>
       <div className="flex items-center gap-1">
         <Checkbox id="process" />
         <label htmlFor="process">In progress</label>
