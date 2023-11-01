@@ -1,4 +1,9 @@
+import InfoTable from "../components/admin/usersInfoTable";
 function Admin() {
-  return <div>Admin Page</div>;
+  return (
+    <div>
+      <InfoTable />
+    </div>
+  );
 }
 export default Admin;
