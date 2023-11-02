@@ -17,7 +17,12 @@ function SpellCheck() {
         )}
       </div>
       <div className="flex items-center space-x-2">
-        <Switch id="spell" checked={isChecked} onCheckedChange={setChecked} />
+        <Switch
+          id="spell"
+          checked={isChecked}
+          onCheckedChange={setChecked}
+          aria-label="Enable or disable spelling mode"
+        />
         <label htmlFor="spell">Spelling Mode</label>
       </div>
     </div>

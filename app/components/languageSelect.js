@@ -39,7 +39,10 @@ export function LanguageCombo() {
       <PopoverTrigger asChild>
         <Button
           variant="outline"
+          aria-haspopup="listbox"
+          aria-owns={open ? "language-listbox" : undefined}
           role="combobox"
+          aria-label="language select"
           aria-expanded={open}
           className="w-[200px] justify-between"
         >
@@ -57,7 +60,9 @@ export function LanguageCombo() {
             {languages.map((language) => (
               <CommandItem
                 key={language.value}
+                aria-selected={value === language.value ? "true" : "false"}
                 value={language.value}
+                label={language.value}
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue);
                   setOpen(false);

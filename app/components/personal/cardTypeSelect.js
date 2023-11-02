@@ -12,13 +12,13 @@ function CardTypeSelect() {
         className="w-[400px] h-[420px] bg-[#a2d2ff] p-5 flex flex-col  rounded-md "
       >
         <TabsList className="flex justify-between mb-3">
-          <TabsTrigger className="w-1/2" value="process">
+          <TabsTrigger className="w-1/2 text-[#000] " value="process">
             In process
           </TabsTrigger>
-          <TabsTrigger className="w-1/2" value="difficult">
+          <TabsTrigger className="w-1/2  text-[#000] " value="difficult">
             Difficult
           </TabsTrigger>
-          <TabsTrigger className="w-1/2" value="learned">
+          <TabsTrigger className="w-1/2  text-[#000] " value="learned">
             Learned
           </TabsTrigger>
         </TabsList>
