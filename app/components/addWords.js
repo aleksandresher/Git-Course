@@ -34,26 +34,28 @@ function AddWords() {
           </DialogHeader>
           <div className="grid gap-4 py-4">
             <div className="grid grid-cols-4 items-center gap-4">
-              <label htmlFor="name" className="text-right">
+              <label htmlFor="english" className="text-right">
                 English
               </label>
               <input
+                id="english"
                 {...register("english", { required: "this field is required" })}
               />
               {errors.english?.message && <span>{errors.english.message}</span>}
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
-              <label htmlFor="username" className="text-right">
+              <label htmlFor="german" className="text-right">
                 German
               </label>
               <input
+                id="german"
                 {...register("german", { required: "this field is required" })}
               />
               {errors.german?.message && <span>{errors.german.message}</span>}
             </div>
           </div>
           <DialogFooter>
-            <input type="submit" />
+            <Button>submit</Button>
           </DialogFooter>
         </form>
       </DialogContent>
